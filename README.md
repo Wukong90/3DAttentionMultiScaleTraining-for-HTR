@@ -12,6 +12,10 @@ Inspired by the typical segmentation-free approaches (HMM、CTC and Encoder-Deco
 (3) The features fusion module;
 (4) The multi-scale training.
 
+![](https://github.com/Wukong90/Handwritten-Text-Recognition/blob/main/imgs/baselines.jpg)
+
+# Codes and trained weights
+
 The TDMTNet code for handwritten text line recognition and the training and testing codes have been released (the cross entropy loss based fine-tuning code has not been released yet). The training/testing code for the Chinese dataset is train_TDMSNet_Chinese.py, and the training/testing code for the English dataset is train_TDMSNet_eng.py. The network model is located in model/model.py. The directory configure contains the main configuration files, parameter settings, dataset construction and image preprocessing codes. The directory Datasets_list is used to store training/test image data and file-name lists. The directory weights contains the trained network weights by using different datasets. A weight name only containing CTC indicates that the weight has not been fine-tuned by the CE loss while a weight name including CTC_CE indicates that the network weight has been fine-tuned by the CE loss. All weights contain three complete branches. In the inference stage, we actually only need to keep the branch built by the window length of 3.
 
 # Experimental datasets
