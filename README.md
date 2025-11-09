@@ -8,11 +8,8 @@ Inspired by the typical segmentation-free approaches (HMM、CTC and Encoder-Deco
 -free methods. The structure of the TDMTNet is shown in the following figure and has four characteristics:
 
 (1) The CNN with the hybrid attention module (HAM);
-
 (2) The 3D attention module;
-
 (3) The features fusion module;
-
 (4) The multi-scale training.
 
 ![](https://github.com/Wukong90/3DAttentionMultiScaleTraining-for-HTR/blob/main/imgs/diff_methods.png)
