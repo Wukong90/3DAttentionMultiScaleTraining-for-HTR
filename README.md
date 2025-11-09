@@ -14,7 +14,7 @@ Inspired by the typical segmentation-free approaches (HMM、CTC and Encoder-Deco
 
 ![](https://github.com/Wukong90/3DAttentionMultiScaleTraining-for-HTR/blob/main/imgs/diff_methods.png)
 
-The following figure shows the proposed the muti-scale training and the parts within the dashed lines are only used during the training stage. It includes two parts. Firstly, in the training stage, multiple feature sequences with different frame lengths are extracted. Although parallel branches including the same 3D attention block and global-local context block are used, we only retained the corresponding branch of the frame length 3 during the inference stage in our experiments. Secondly, we use the joint training of the CTC and the CE losses. 
+The following figure shows the proposed muti-scale training and the parts within the dashed lines are only used during the training stage. It includes two parts. Firstly, in the training stage, multiple feature sequences with different frame lengths are extracted. Although parallel branches including the same 3D attention block and global-local context block are used, we only retained the corresponding branch of the frame length 3 during the inference stage in our experiments. Secondly, we use the joint training of the CTC and the CE losses. 
 
 ![](https://github.com/Wukong90/3DAttentionMultiScaleTraining-for-HTR/blob/main/imgs/net_structure.png)
 
