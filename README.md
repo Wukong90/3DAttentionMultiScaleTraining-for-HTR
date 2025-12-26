@@ -1,6 +1,10 @@
 **Read this in other languages: [English](README.md),[中文](README_zh.md).**
 
-This repository is the implementation of the handwritten text recognition experiments in the paper Improving Handwritten Text Recognition via 3D Attention and Multi-Scale Training. 
+This repository is the implementation of the handwritten text recognition experiments in the paper [Improving Handwritten Text Recognition via 3D Attention and Multi-Scale Training]([https://](https://link.springer.com/chapter/10.1007/978-3-032-09368-4_3). The proposed network can recognize complex handwritten text lines, including different sizes, colors and backgrounds, compact, slant, scrawling and long chars. Some typical samples are shown in the following pictures: 
+
+![](https://github.com/Wukong90/3DAttentionMultiScaleTraining-for-HTR/blob/main/imgs/diff_methods.png)
+
+
 
 # Three-dimensional attention multi-scale training network (TDMTNet)
 
