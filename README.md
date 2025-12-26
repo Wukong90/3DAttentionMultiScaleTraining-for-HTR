@@ -1,5 +1,7 @@
 **Read this in other languages: [English](README.md),[中文](README_zh.md).**
 
+This repository is the implementation of the handwritten text recognition experiments in the paper Improving Handwritten Text Recognition via 3D Attention and Multi-Scale Training. 
+
 # Three-dimensional attention multi-scale training network (TDMTNet)
 
 In the handwritten text recognition task, the HMM has a higher modeling resolution for each character by using mutiple states. However, it needs a complex training and inference pipeline, including the feature design, the generative model GMM-HMM, the discriminative  model NN-HMM and the language model. The CTC and the ED methods use more efficient and direct mathematic computation and the corresponding networks can be trained in an end-to-end way. Compared with the HMM, their modeling resolutions of characters are lower. The recognition networks are prone to attention drift when applied to long handwritten text recognition. Previous experience indicates that they need more traing text.
