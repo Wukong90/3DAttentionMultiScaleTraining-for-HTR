@@ -2,7 +2,7 @@
 
 该代码仓库是手写文本识别([Improving Handwritten Text Recognition via 3D Attention and Multi-Scale Training](https://link.springer.com/chapter/10.1007/978-3-032-09368-4_3))的实现。 所提出的网络能够识别复杂手写文本行,包括不同尺寸、颜色、背景、紧凑、倾斜、潦草与较长的手写字符。一些典型的例子在下图展示：
 
-![](https://github.com/Wukong90/3DAttentionMultiScaleTraining-for-HTR/blob/main/imgs/examples.png)
+![](https://github.com/Wukong90/3DAttentionMultiScaleTraining-for-HTR/blob/main/imgs/yang_li.png)
 
 # 3维注意力多尺度训练网络(TDMTNet)
 在手写文本识别任务中, 隐马尔可夫模型(HMM)通过使用多个状态对每个字符进行较高分辨率的建模。然而，它需要复杂的训练与推理流程，包括特征设计，生成式模型混合高斯-隐马尔可夫模型(GMM-HMM)，区分式模型神经网络-隐马尔可夫模型(NN-HMM)以及语言模型。基于连接时序分类(CTC)与编解码(Encoder-Decoder)的方法使用更高效与直接的数学计算，相应的网络能够被端到端的训练。与HMM相比较，他们对每个字符的建模分辨率相对较低。当被用到长的手写文本识别任务上时，识别网络可能会产生注意力漂移的问题。之前的实验表明他们需要更多的训练文本。
@@ -34,7 +34,7 @@ Datasets_list/SCUT-HCCDoc下的文件TrainDataRuChar2Int_HCCDoc.npy 与 TrainDat
 Datasets_list/SCUT-EPT/下的文件TrainDataRuChar2Int_EPT.npy 与 TrainDataRuInt2Char_EPT.npy 保存有我们在实验中使用的该数据集的字符与网络输出节点对应关系。
 
 一些典型的被移除的训练图片如下：
-![](https://github.com/Wukong90/3DAttentionMultiScaleTraining-for-HTR/blob/main/imgs/removed_training_images.png)
+![](https://github.com/Wukong90/3DAttentionMultiScaleTraining-for-HTR/blob/main/imgs/yi_chu_de_dian_xing_xun_lian_li_zi.png)
 
 标准的IAM数据集提供了一个训练集、两个验证集和一个测试集。目录Datasets_list/IAM/split/中列出的trainset.txt、validationset1.txt、validationset2.txt、testset.txt为相应的训练列表、验证列表与测试列表。我们的实验中使用了原始的全部训练数据作为网络训练，两个验证集全部数据用于选择最好模型进行测试集上的评估，标准测试集中的所有图片都被用于评估模型的最终性能。
 
