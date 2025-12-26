@@ -1,5 +1,9 @@
 **其他语言版本：[English](README.md)，[中文](README_zh.md).**
 
+该代码仓库是手写文本识别([Improving Handwritten Text Recognition via 3D Attention and Multi-Scale Training](https://link.springer.com/chapter/10.1007/978-3-032-09368-4_3))的实现。 所提出的网络能够识别复杂手写文本行,包括不同尺寸、颜色、背景、紧凑、倾斜、潦草与较长的手写字符。一些典型的例子在下图展示：
+
+![](https://github.com/Wukong90/3DAttentionMultiScaleTraining-for-HTR/blob/main/imgs/examples.png)
+
 # 3维注意力多尺度训练网络(TDMTNet)
 在手写文本识别任务中, 隐马尔可夫模型(HMM)通过使用多个状态对每个字符进行较高分辨率的建模。然而，它需要复杂的训练与推理流程，包括特征设计，生成式模型混合高斯-隐马尔可夫模型(GMM-HMM)，区分式模型神经网络-隐马尔可夫模型(NN-HMM)以及语言模型。基于连接时序分类(CTC)与编解码(Encoder-Decoder)的方法使用更高效与直接的数学计算，相应的网络能够被端到端的训练。与HMM相比较，他们对每个字符的建模分辨率相对较低。当被用到长的手写文本识别任务上时，识别网络可能会产生注意力漂移的问题。之前的实验表明他们需要更多的训练文本。
 
