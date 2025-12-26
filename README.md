@@ -40,6 +40,10 @@ In the SCUT-EPT dataset, 681 abnormal handwritten texts including swapping or ov
 
 The files TrainDataRuChar2Int_EPT.npy and TrainDataRuInt2Char_EPT.npy under the directory Datasets_list/SCUT-EPT/ store the corresponding relationship between the characters and network output nodes.
 
+Some removed training images are shown in the following:
+
+![](https://github.com/Wukong90/3DAttentionMultiScaleTraining-for-HTR/blob/main/imgs/removed_training_images.png)
+
 The standard IAM dataset provides a training set, two validation sets, and a test set. The trainset.txt, validationset1.txt, validationset2.txt, and testset.txt listed in the directory Datasets_list/IAM/split/ are the corresponding training list, validation lists, and test list. In our experiments, all original training iamges were used for training, all images in two validation sets were used to select the best model and all original images in the test set were used to evaluate the final performance of the model.
 
 Two latest challenging Chinese handwritten datasets SCUT-HCCDoc and SCUT-EPT can be obtained from https://github.com/HCIILAB/SCUT-HCCDoc_Dataset_Release and https://github.com/HCIILAB/SCUT-EPT_Dataset_Release?tab=readme-ov-file respectively. The English handwritten dataset IAM can be obtained from https://fki.tic.heia-fr.ch/databases/iam-handwriting-database. It should be noted that since 2018, most related researchers have adopted the so-called RWTH data partition, which is different from the standard IAM dataset partition.
